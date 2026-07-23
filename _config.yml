@@ -18,7 +18,7 @@ future: true
 
 title: 공부 기록 ✨
 
-tagline: 개발/프로그래밍을 공부하며 정리하는 블로그 # it will display as the subtitle
+tagline: 자동배포 검증용 부제목
 
 description: >- # used by seo meta and the atom feed
   개발/프로그래밍을 공부하며 정리하는 블로그
