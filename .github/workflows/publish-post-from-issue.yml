@@ -7,6 +7,7 @@ on:
 permissions:
   contents: write
   issues: write
+  actions: write
 
 concurrency:
   group: publish-post
@@ -40,6 +41,11 @@ jobs:
           git add "${{ steps.create.outputs.filename }}"
           git commit -m "Add post from issue #${{ github.event.issue.number }}"
           git push
+
+      - name: Trigger Pages build
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: gh workflow run pages-deploy.yml --ref master
 
       - name: Close issue with confirmation
         uses: actions/github-script@v7
