@@ -1,7 +1,6 @@
 ---
 icon: fas fa-palette
 order: 6
-title: 꾸미기
 ---
 
 아래 링크를 누르면 폼이 열립니다. 원하는 항목만 채우고(비워두면 그대로 유지) **Submit new issue**를 누르면 자동으로 반영됩니다.
